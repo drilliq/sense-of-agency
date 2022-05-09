@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Playfair+Display:wght@400;600;800&family=Roboto:wght@200;400;600;900&family=PT+Serif:wght@200;400;600;900&display=swap');
+
+*,
+** {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.back-container {
+  display: flex;
+  justify-content: center;
+}
+
+.back-button {
+  padding-block: 1rem;
+  padding-inline: 3rem;
+  border: 1px solid #333;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.4);
+}
+
+.back-button:hover {
+  background-color: #111;
+}
+
+.back-arrow {
+  font-size: 1.5rem;
+}
+
+.divider-10 {
+  margin-block: 5rem;
+}
+
+.nicht {
+  display: none;
+}
+
+/* Start page */
+
+.start-page {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-direction: column;
+}
+
+.start-instruction,
+.test-instruction,
+.key-instruction,
+.pink-noise-test {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #333;
+  font-family: 'PT Serif';
+}
+
+.start-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5rem;
+  font-family: 'Roboto';
+}
+
+.start-selector {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #333;
+  border-radius: 2rem;
+  font-size: 2rem;
+  background-color: #fcfcfc;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+}
+.start-selector:hover {
+  background-color: #f1f1ff;
+  /* box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7); */
+}
+
+.start-credits {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Test page */
+.tests-page {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-direction: column;
+}
+
+.test-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  font-family: 'Roboto';
+}
+
+.box-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.test-selection {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 3px solid #333;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  background-color: #fcfcfc;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+}
+
+.test-selection:hover {
+  background-color: #f1f1ff;
+}
+
+/* Keystrokes */
+
+.keystrokes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 10rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  font-size: 2rem;
+  justify-content: center;
+}
+.key {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid #333;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red {
+  background-color: red;
+}
+
+.key-instruction {
+  margin-bottom: 4rem;
+}
+
+/* Pink Noise */
+
+.pink-noise-test {
+  /* height: 100vh; */
+  margin-top: 4rem;
+  flex-direction: column;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+.pink-noise-asterisk {
+  font-size: 30vh;
+  color: #e75480;
+  margin-top: 2vh;
+}
+
+.white-noise-asterisk {
+  font-size: 30vh;
+  color: black;
+  margin-top: 2vh;
+}
+
+.pink-noise-timer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #333;
+  font-family: 'PT Serif';
+  margin-top: 1rem;
+}
+
+/* Experiment choice */
+.experiment-page {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-direction: column;
+}
+
+.experiment-choice-instruction {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #333;
+  font-family: 'PT Serif';
+}
+
+.experiment-choices {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5rem;
+  font-family: 'Roboto';
+}
+
+.experiment-chooser {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #333;
+  border-radius: 2rem;
+  font-size: 2.5rem;
+  background-color: #fcfcfc;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+}
+
+.experiment-chooser:hover {
+  background-color: #f1f1ff;
+}
+
+/* Instructions */
+
+.instruction-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+.instructions {
+  width: 800px;
+  border: 2px solid #333;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.instructions-title {
+  font-size: 3rem;
+  border-bottom: 1px solid #333;
+  font-family: 'PT Serif';
+}
+
+.instructions-details {
+  margin-block: 2.5rem;
+  font-family: Roboto;
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+  margin-inline: 2rem;
+}
+
+.instructions-start {
+  padding-block: 1rem;
+  padding-inline: 3rem;
+  border: 1px solid #ccc;
+  justify-items: center;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  font-size: 1.4rem;
+  font-family: 'Poppins';
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.instructions-start:hover {
+  background-color: #111;
+}
+
+.instructions-start:active {
+  /* box-shadow: none; */
+  transform: scale(0.99);
+}
+
+.instructions-list li {
+  margin-block: 2rem;
+  line-height: 2rem;
+}
+
+/* countdown */
+
+.countdown {
+  font-size: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* EXPERIMENT */
+
+.white-noise,
+.pink-noise {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Break */
+
+.break-details {
+  display: flex;
+  flex-direction: column;
+  margin-block: 3rem;
+  font-size: 2rem;
+}
+
+.break-list {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+.break-countdown {
+  font-size: 6rem;
+  display: flex;
+  justify-content: center;
+  margin-block: 2rem;
+}
+
+.experiment-pink-noise-asterisk {
+  font-size: 30vh;
+  color: black;
+  margin-top: 2vh;
+}
+
+.continue-button {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding-block: 1rem;
+  padding-inline: 3rem;
+  border-radius: 10px;
+  color: white;
+  font-family: Roboto;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  border: 1px solid #333;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.4);
+}
+
+.continue-button:hover {
+  background-color: #111;
+}
+
+.continue-button:active {
+  transform: scale(0.98);
+}
+
+/* End screen */
+.smiley {
+  font-size: 15rem;
+  display: flex;
+  justify-content: center;
+  margin-block: 2rem;
+}
+
+.pink {
+  color: #e75480;
+}
+.blue {
+  color: blue;
+}
+.colorGreen {
+  color: green;
+}
+.colorRed {
+  color: red;
+}
+
+.details-form {
+  margin-block: 2.5rem;
+  font-family: Roboto;
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.btn-download {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding-block: 0.7rem;
+  padding-inline: 2.5rem;
+  border-radius: 10px;
+  color: white;
+  font-family: Roboto;
+  font-size: 1rem;
+  margin-top: 2rem;
+  border: 1px solid #333;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.4);
+}
+.download-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.feedback-container {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  margin-block: 3rem;
+  font-size: 5rem;
+}
+.practice-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.practice-asterisk {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30vh;
+  color: black;
+  margin-top: 2vh;
+}
+
+.error {
+  margin-top: 6rem;
+  padding-block: 3rem;
+  padding-inline: 5rem;
+  background-color: red;
+  color: white;
+  font-size: 1.5rem;
+  border: 1px solid #333;
+  border-radius: 10px;
+}
