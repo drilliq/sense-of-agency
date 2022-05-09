@@ -6,6 +6,6 @@ Project is written in JavaScript using the React framework.
 
 Participant instructions are provided within the project:
 
-![Instructions screenshot](https://giuliaq.com/images/instructions.png)
+![Instructions screenshot](https://giuliaq.com/images/instructions-example.png)
 
 Pull requests are very welcome.
