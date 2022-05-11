@@ -10,6 +10,7 @@
 body {
   display: flex;
   justify-content: center;
+  background-color: #d9dddc;
 }
 
 a {
